@@ -1,0 +1,52 @@
+
+.description{
+    @extend %centered;
+    padding-bottom: 94px;
+    text-align: center;
+}
+
+.description_title{
+    display: inline-block;
+    font-family: roboto;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.description-list{
+    @extend %list;
+    display: flex;
+}
+
+.description-card:not(last-child){
+    margin-right: 30px;
+}
+
+.description-card{
+    position: relative;
+}
+
+.description-paragraph{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    height: 70px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-family: roboto;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.description-img{
+    display: block;
+}

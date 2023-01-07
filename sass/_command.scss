@@ -1,0 +1,104 @@
+
+.command{
+    @extend %centered;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+.command-style{
+    background-color: $command-bcg;
+}
+
+.command-link{
+    @extend %link;
+}
+
+.command-heading{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+.command-list{
+    @extend %list;
+    display: flex;
+}
+
+.command-item{
+    background-color: #ffffff;
+    padding-bottom: 24px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+.command-item:not(last-child){
+    margin-right: 30px;
+}
+
+.command-social{
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition-property: background-color;
+}
+
+.social-item:hover {
+    background-color: $accent-color;
+    transition-duration: 250ms;
+}
+.icon-hover{
+    fill: $icon-fill;
+    transition-property: fill;
+}
+
+.social-item:hover .icon-hover{
+    fill: #ffffff;
+    transition-duration: 250ms;
+}
+
+.card-footer{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.command-title{
+    @extend %link;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: roboto;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    color: $title-color;
+
+}
+
+.command-paragraph{
+    @extend %link;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: roboto;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    color: $font-color;
+}

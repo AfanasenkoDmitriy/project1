@@ -1,0 +1,38 @@
+
+.main-portfolio{
+    @extend %centered;
+    padding-top: 93px;
+    padding-bottom: 94px;
+}
+
+.nav-filters{
+    @extend %list;
+    display: flex;
+    justify-content: center;
+}
+
+.filters-item{
+    padding: 6px 22px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    transition-duration: background-color, color;
+}
+
+.filters-item:not(last-child){
+    margin-right: 8px;
+}
+
+.filters-item:hover{
+    background-color: $accent-color;
+    color: #ffffff;
+    transition: 250ms;
+}
+
+.filters-paragraph{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.125;
+    letter-spacing: 0.03em;
+}

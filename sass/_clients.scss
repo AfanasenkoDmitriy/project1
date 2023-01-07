@@ -1,0 +1,83 @@
+
+.clients{
+    @extend %centered;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+}
+
+.clients-list{
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-title{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-family: roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.clients-icon-yaco{
+    fill: $icon-fill;
+    width: 40px;
+    height: 52px;
+    transition-property: fill;
+}
+
+.clients-icon-tagline{
+    fill: $icon-fill;
+    width: 40px;
+    height: 52px;
+    transition-property: fill;
+}
+
+.clients-icon-company{
+    fill: $icon-fill;
+    width:41px;
+    height: 43px;
+    transition-property: fill;
+}
+
+.clients-icon-foster{
+    fill: $icon-fill;
+    width:80px;
+    height: 40px;
+    transition-property: fill;
+}
+
+.clients-icon-brand{
+    fill: $icon-fill;
+    width:59px;
+    height: 47px;
+    transition-property: fill;
+}
+
+.clients-icon-tagcompany{
+    fill: $icon-fill;
+    width:89px;
+    height: 46px;
+    transition-property: fill;
+}
+
+.clients-link{
+    @extend %link;
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $icon-fill;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-link:hover,
+.clients-link:hover > .icon-hover{
+    border-color: $accent-color;
+    fill: $accent-color;
+    transition-duration: 250ms;
+}
